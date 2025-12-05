@@ -1,0 +1,4 @@
+# Example dependencies used in the real project (simplified)
+requests
+openai
+python-nmap
