@@ -38,7 +38,6 @@ if is_ssh_session():
 from modules.scanner import run_nmap_scan
 from modules.report import create_report
 from modules.system_info import collect_system_info
-from modules.reverse_shell import attempt_reverse_shell
 from modules.gpt_analysis import analyze_scan_with_gpt
 
 # ---- Hilfsfunktionen ----
@@ -107,11 +106,7 @@ try:
 except Exception as e:
     print("❌ " + _("sysinfo.error", error=str(e)))
 
-# Reverse Shell
-print("\n🔁 " + _("shell.try"))
-try:
-    attempt_reverse_shell()
-except Exception as e:
-    print("[!] " + _("shell.failed", error=str(e)))
+# Hinweis: Reverse Shell / Connectivity wurde für die öffentliche GitHub-Version entfernt.
+print("\nℹ️ Connectivity module removed for public GitHub release.")
 
 print("\n🎯 " + _("app.done"))
