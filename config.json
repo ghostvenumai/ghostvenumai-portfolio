@@ -1,0 +1,8 @@
+{
+  "target": "192.168.178.1",
+  "nmap_args": "-sS -T4 -v -sV",
+  "openai_key": "sk-",
+  "ssh_require_change": false,
+  "language": "en",
+  "ssh_password_hash": ""
+}
